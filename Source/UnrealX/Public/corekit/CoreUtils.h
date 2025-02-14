@@ -1,3 +1,5 @@
+// © 2025 UnrealX, all rights reserved by ELife Studio
+
 #pragma once
 
 #include "CoreMinimal.h"
@@ -5,7 +7,7 @@
 #include "CoreUtils.generated.h"
 
 UCLASS()
-class UnrealX_API UCoreUtils : public UBlueprintFunctionLibrary
+class UNREALX_API UCoreUtils : public UBlueprintFunctionLibrary
 {
     GENERATED_BODY()
 
@@ -20,5 +22,5 @@ public:
     static void ParseJson(const FString& JsonString, UStruct* OutStruct);
 
     UFUNCTION(BlueprintCallable, Category = "Utils|Report")
-    static void SendMessageToServer(const FString& Username, const FString& Email, const FString& Message)
+    static void SendMessageToServer(const FString& Username, const FString& Email, const FString& Message);
 };

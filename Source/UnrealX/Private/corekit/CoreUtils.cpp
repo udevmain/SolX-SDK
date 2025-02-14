@@ -4,7 +4,9 @@
 #include "Interfaces/IHttpRequest.h"
 #include "Interfaces/IHttpResponse.h"
 #include "Json.h"
+#include "JsonUtilitiesClasses.h"
 #include "Core/sdk_subsystem.h"
+#include <JsonObjectConverter.h>
 
 FString UCoreUtils::GetCurrentDateTime()
 {
